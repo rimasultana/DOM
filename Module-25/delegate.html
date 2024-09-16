@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>delegate</title>
+</head>
+<body>
+    <h1>Explore Event Delegate</h1>
+    <section>
+        <ul id="list-container">
+            <li class="item">Lorem, ipsum dolor.</li>
+            <li class="item">Laborum, molestias dignissimos.</li>
+            <li class="item">Molestiae, assumenda iusto.</li>
+            <li class="item">Quisquam, dolorem dolor!</li>
+            <li class="item">Enim, minus sed.</li>
+            <li class="item">Facilis, vel fugiat!</li>
+        </ul>
+    </section>
+    <script>
+        const items = document.getElementsByClassName('item');
+    for(const item of items){
+        item.addEventListener('click', function(){
+console.log(item);
+        })}
+    </script>
+</body>
+</html>
